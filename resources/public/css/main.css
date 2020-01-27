@@ -1,0 +1,135 @@
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  width: 24%;
+  min-width: 48px;
+  min-height 48px;
+  text-align: center;
+  line-height: 48px;
+  padding: 24px;
+  display: inline;
+}
+
+.selected {
+  background-color: blue;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+.nav__item:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.container{
+   display: flex;
+   width: 100%;
+   background-color: #555;
+   overflow: auto;
+}
+
+@media screen and (max-width: 325px) {
+  .container{
+    display: block;
+  }
+  .inner {
+    order: 1;
+  }
+  .nav {
+    order: 2;
+  }
+  .nav.show{
+    display: block;
+  }
+  .nav.hide{
+    display: none;
+  }
+  .nav__item {
+    width: 100%;
+    max-widwth: 100%;
+    display: block;
+    min-height 40px;
+    line-height: 40px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 325px){
+  .burgermenu{
+    display: none;
+  }
+  .inner{
+    order: 2;
+  }
+  .nav{
+    width: 100%;
+    order: 1;
+  }
+}
+
+      .inner {
+	float: right;
+	height: 40px;
+      }
+      .burgermenu{
+	float: right;
+	  height: 100%;
+	width: 50px;
+	background-color: red;
+      }
+      .burger {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 7px;
+      }
+
+.divflow {
+  display: flex;
+}
+.twothirds {
+  width: 66%;
+}
+.divright {
+  float: right;
+}
+
+.divtitle {
+  font-size: 1.5em;
+}

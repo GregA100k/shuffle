@@ -25,8 +25,8 @@
 ;                       (first (keep-indexed #(when (= name (:name %2)) %1) v)))
 ;        ]
 ;  (update-in db [:tabs (index-of-name (:tabs db) tabname)] assoc :subname subtabname))
-  (js/alert (str "handle change subtab " subtabname)
-  (assoc db :subname subtabname))
+;  (js/alert (str "handle change subtab " subtabname))
+  (assoc db :subname subtabname)
 )
 
 (re-frame/reg-event-db

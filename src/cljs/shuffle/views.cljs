@@ -3,38 +3,32 @@
             [shuffle.subs :as subs]
             ))
 
-(defn draw-page [page]
-  (if (:content page)
-    ((:content page))
-    [:div 
-      (if (:heading page)
-        [:h2 (:heading page)])
-      (:body page)
-   ] 
- ))
-
-(defn sub-panel []
-  (let [subname (re-frame/subscribe [::subs/subname])
-       ]
- ;;   (js/alert (str "sub-panel view " @subname))
- ))
+(defn draw-page [tab]
+    [:div ((:content tab) tab) ] 
+)
 
 (defn main-panel []
   (let [name (re-frame/subscribe [::subs/name])
         pages (re-frame/subscribe [::subs/pages])
+        tabs (re-frame/subscribe [::subs/tabs])
         page-by-name (fn [n ps] (some #(if (= n (:name %))
                                          %
                                          nil) ps))
-        page (page-by-name @name @pages)
-    ;;    _ (js/alert (str "Main-panel " @name))
+        tab (page-by-name @name @tabs)
+        page (:content tab)
         ]
     (if page
-      (draw-page page)
+      (draw-page tab)
       [:div "Page from ..." @name " and then some more text" ]
     )
 ))
 
 (defn draw-tab [t click-function]
+  [(if (:current t) :li.nav__item.selected :li.nav__item)
+     {:on-click (click-function t)} 
+     (:name t)
+   ])
+(defn draw-content [t click-function]
   [(if (:current t) :li.nav__item.selected :li.nav__item)
      {:on-click (click-function t)} 
      (:name t)
@@ -51,7 +45,6 @@
 (defn tabs-panel []
   (let [tabs (re-frame/subscribe [::subs/tabs])
         show_or_hide (re-frame/subscribe [::subs/menu])
-   ;;     a (js/alert "tabs panel")
         ]
     [:div.container
      [:div.inner
@@ -65,7 +58,6 @@
     ]))
 
 (defn whole-page []
- ;;(js/alert "whole page") 
   [:div
     [tabs-panel]
     [main-panel]

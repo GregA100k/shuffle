@@ -1,6 +1,6 @@
 (ns shuffle.view.photos)
 
-(defn draw []
+(defn draw [the-tab]
   [:div
    [:h2 "Photos"]
    [:div 

@@ -1,6 +1,6 @@
 (ns shuffle.view.racecourse)
 
-(defn draw []
+(defn draw [the-tab]
   [:div
    [:h2 "Race Course"]
    [:div 

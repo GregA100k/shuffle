@@ -1,6 +1,6 @@
 (ns shuffle.view.sponsors)
 
-(defn draw []
+(defn draw [the-tab]
   [:div
    [:h2 "Sponsors"]
    [:div 

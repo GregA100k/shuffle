@@ -3,9 +3,12 @@
             [re-frame.core :as re-frame]
   ))
 
+
 (defn subtab-5k []
-  [:div.title
+  [:div
+    [:div.divtitle
     "Night Owl 5K and 10K"
+    ]
     [:div
 "Registration Check-In opens at 6:00 p.m. at the Nordic Center"
 [:p]
@@ -57,26 +60,33 @@
   ]
 )
 
+
 (defn draw-subtab [subtab-name]
   (if (= subtab-name "6 Hour")
     (subtab-6hour)
     (subtab-5k)
     )
   )
+(defn draw-tab [t click-function]
+  [(if (:current t) :li.nav__item.selected :li.nav__item)
+     {:on-click (click-function t)} 
+     (:name t)
+   ])
 
-(defn draw []
+(defn draw [the-tab]
+  (let [subtab (some #(if (:current %) (:name %) nil) (:subtabs the-tab)) ]
   [:div
-    [:h2 "Race Info"]
+    [:h2 (:name the-tab)]
     [:div "The Night Owl Races are an excellent way to take the next step in trail running.  The Six Hour Shuffle is a good introduction to ultra running.  Long enough to get past the marathon distance, but not too long.  The Namesake Night Owl 5K and 10K are great introductions to night time trail running."
       [:p]
       "All three races are run on grassy ski trails over rolling hills.  The lights will be on for the 5K and 10K Night Owl races, but runners are encouraged to bring suplemental lighting with either a headlamp or hand held flashlight."
     ]
     [:div
-      (views/draw-tabs [{:name "5K 10K"} {:name "6 Hour" :current true}] 
+      (views/draw-tabs (:subtabs the-tab)
                        :show
                        (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
 
-      (draw-subtab "5K 10K")
+       (draw-subtab subtab)
     ]
-  ])
+  ]))
 

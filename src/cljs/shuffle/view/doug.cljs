@@ -1,6 +1,6 @@
 (ns shuffle.view.doug)
 
-(defn draw []
+(defn draw [the-tab]
   [:div
    [:h2 "Doug Allen"]
    [:div 

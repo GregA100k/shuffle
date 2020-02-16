@@ -21,12 +21,18 @@
   handle-change-tab)
 
 (defn handle-change-subtab [db [_ subtabname]]
-;  (let [index-of-name (fn [v name]
-;                       (first (keep-indexed #(when (= name (:name %2)) %1) v)))
-;        ]
-;  (update-in db [:tabs (index-of-name (:tabs db) tabname)] assoc :subname subtabname))
-;  (js/alert (str "handle change subtab " subtabname))
-  (assoc db :subname subtabname)
+  (let [_ (js/alert (str "change subtab called with " subtabname))
+        index-of-name (fn [v name]
+                       (first (keep-indexed #(when (= name (:name %2)) %1) v)))
+        current-tab-index (reduce-kv (fn [a k v] (if (:current v) k a)) -1 (:tabs db))
+        tabname (:name (get (:tabs db) current-tab-index))
+        new-db (update-in db [:tabs (index-of-name (:tabs db) tabname)] assoc :subname subtabname :current true)
+        ;;_ (js/alert (str "handle change subtab " (:tabs new-db)))
+        _ (js/alert (str "handle change subtab setting subname " subtabname))
+        _ (js/alert (str "handle change subtab -- db -- " new-db))
+        ]
+  (assoc new-db :subname subtabname)
+  )
 )
 
 (re-frame/reg-event-db

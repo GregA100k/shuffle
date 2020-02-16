@@ -57,9 +57,11 @@
   ]
 )
 
-(defn draw-subtab []
-  ;(subtab-5k)
-  (subtab-6hour)
+(defn draw-subtab [subtab-name]
+  (if (= subtab-name "6 Hour")
+    (subtab-6hour)
+    (subtab-5k)
+    )
   )
 
 (defn draw []
@@ -70,10 +72,11 @@
       "All three races are run on grassy ski trails over rolling hills.  The lights will be on for the 5K and 10K Night Owl races, but runners are encouraged to bring suplemental lighting with either a headlamp or hand held flashlight."
     ]
     [:div
-      (views/draw-tabs [{:name "5K 10K"} {:name "6 Hour"}] 
+      (views/draw-tabs [{:name "5K 10K"} {:name "6 Hour" :current true}] 
                        :show
-                       (fn [t] #(re-frame/dispatch [:change-subtab (:subname t)]))  )
+                       (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
 
-      (draw-subtab)
+      (draw-subtab "5K 10K")
     ]
   ])
+

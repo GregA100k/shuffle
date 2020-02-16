@@ -82,11 +82,12 @@
       "All three races are run on grassy ski trails over rolling hills.  The lights will be on for the 5K and 10K Night Owl races, but runners are encouraged to bring suplemental lighting with either a headlamp or hand held flashlight."
     ]
     [:div
-      (views/draw-tabs (:subtabs the-tab)
-                       :show
-                       (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
-
-       (draw-subtab subtab)
+      [:div.container
+        (views/draw-tabs (:subtabs the-tab)
+                         :show
+                         (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
+      ]
+     (draw-subtab subtab)
     ]
   ]))
 

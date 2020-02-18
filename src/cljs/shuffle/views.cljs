@@ -28,11 +28,6 @@
      {:on-click (click-function t)} 
      (:name t)
    ])
-(defn draw-content [t click-function]
-  [(if (:current t) :li.nav__item.selected :li.nav__item)
-     {:on-click (click-function t)} 
-     (:name t)
-   ])
 
 (defn draw-tabs [tablist show-or-hide click-function]
     [(if (= :show show-or-hide) :nav#menu.nav.show :nav#menu.nav.hide)

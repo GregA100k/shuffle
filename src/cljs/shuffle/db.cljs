@@ -16,7 +16,9 @@
           {:name "Race Info" :content raceinfo/draw :subtabs [{:name "5K 10K" :content raceinfo/subtab-5k :current true}
                                                               {:name "6 Hour" :content raceinfo/subtab-6hour}]}
           {:name "Race Course" :content racecourse/draw }
-          {:name "Race Results" :content results/draw }
+          {:name "Results" :content results/draw :subtabs [{:name "5K"     :content results/subtab-5k :current true}
+                                                           {:name "10K"    :content results/subtab-10k}
+                                                           {:name "6 Hour" :content results/subtab-6hour}]}
           {:name "Doug Allen" :content doug/draw }
           {:name "Photos" :content photos/draw }
           {:name "Sponsors" :content sponsors/draw }]

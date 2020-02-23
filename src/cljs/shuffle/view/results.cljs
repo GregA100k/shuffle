@@ -1,7 +1,7 @@
 (ns shuffle.view.results)
 
 (defn draw [the-tab]
-  [:div
+  [:div.content
    [:h2 "Results"]
    [:div 
     "Results and stuff"

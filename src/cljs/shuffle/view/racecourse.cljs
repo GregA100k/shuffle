@@ -1,7 +1,7 @@
 (ns shuffle.view.racecourse)
 
 (defn draw [the-tab]
-  [:div
+  [:div.content
    [:h2 "Race Course"]
    [:div 
     "The races will be run on wide grass trails.  The fully lit trails include rolling hills with excellent views of the lakes and a brilliant display of fall color.  Each loop of the course is 3.35 miles so 5K is one loop and the 10K is two loops"

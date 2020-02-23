@@ -5,7 +5,7 @@
 
 
 (defn subtab-5k []
-  [:div
+  [:div.content
     [:div.divtitle
     "Night Owl 5K and 10K"
     ]
@@ -38,7 +38,7 @@
 )
 
 (defn subtab-6hour []
-  [:div
+  [:div.content
     [:div.divtitle
       "Night Owl 6 Hour Shuffle"
     ]
@@ -75,7 +75,7 @@
 
 (defn draw [the-tab]
   (let [subtab (some #(if (:current %) (:name %) nil) (:subtabs the-tab)) ]
-  [:div
+  [:div.content
     [:h2 (:name the-tab)]
     [:div "The Night Owl Races are an excellent way to take the next step in trail running.  The Six Hour Shuffle is a good introduction to ultra running.  Long enough to get past the marathon distance, but not too long.  The Namesake Night Owl 5K and 10K are great introductions to night time trail running."
       [:p]
@@ -83,6 +83,9 @@
     ]
     [:div
       [:div.container
+        [:div.inner
+         [:div#burgermenu.burgermenu 
+        ]]
         (views/draw-tabs (:subtabs the-tab)
                          :show
                          (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )

@@ -61,11 +61,8 @@
 )
 
 
-(defn draw-subtab [subtab-name]
-  (if (= subtab-name "6 Hour")
-    (subtab-6hour)
-    (subtab-5k)
-    )
+(defn draw-subtab [subtab]
+  ((:content subtab))
   )
 (defn draw-tab [t click-function]
   [(if (:current t) :li.nav__item.selected :li.nav__item)
@@ -74,7 +71,7 @@
    ])
 
 (defn draw [the-tab]
-  (let [subtab (some #(if (:current %) (:name %) nil) (:subtabs the-tab)) ]
+  (let [subtab (some #(if (:current %) % nil) (:subtabs the-tab)) ]
   [:div.content
     [:h2 (:name the-tab)]
     [:div "The Night Owl Races are an excellent way to take the next step in trail running.  The Six Hour Shuffle is a good introduction to ultra running.  Long enough to get past the marathon distance, but not too long.  The Namesake Night Owl 5K and 10K are great introductions to night time trail running."

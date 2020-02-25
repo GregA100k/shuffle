@@ -24,31 +24,29 @@
   ]
 )
 
-(defn draw-subtab [subtab-name]
-  (if (= subtab-name "6 Hour")
-    (subtab-6hour)
-    (subtab-5k)
-    )
+(defn draw-subtab [subtab]
+  ((:content subtab))
   )
 
+
 (defn draw [the-tab]
-  [:div.content
-   [:h2 "Results"]
-   [:div 
-    "Results and stuff"
-     [:p]
+  (let [subtab (some #(if (:current %) % nil) (:subtabs the-tab))
+       ]
+    [:div.content
+     [:h2 "Results"]
+     [:div 
+      "Results and stuff"
+       [:p]
 
-    [:div
-      [:div.container
-        [:div.inner
-         [:div#burgermenu.burgermenu 
-        ]]
-        (views/draw-tabs (:subtabs the-tab)
-                         :show
-                         (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
+      [:div
+        [:div.container
+          [:div.inner
+           [:div#burgermenu.burgermenu 
+          ]]
+          (views/draw-tabs (:subtabs the-tab)
+                            :show
+                            (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
+        ]
+       (draw-subtab subtab)
       ]
-     (draw-subtab subtab)
-    ]
-
-   ]
-   ])
+     ] ]))

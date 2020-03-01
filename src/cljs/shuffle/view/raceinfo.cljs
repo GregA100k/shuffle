@@ -81,11 +81,11 @@
     [:div
       [:div.container
         [:div.inner
-         [:div#burgermenu.burgermenu 
-        ]]
+         ;;[:div#burgermenu.burgermenu ]
+        ]
         (views/draw-tabs (:subtabs the-tab)
                          :show
-                         (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
+                         (fn [t] #(re-frame/dispatch [:change-subtab (:name t)])) :sub  )
       ]
      (draw-subtab subtab)
     ]

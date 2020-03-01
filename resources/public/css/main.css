@@ -72,6 +72,14 @@ img {
     line-height: 40px;
     padding: 10px;
   }
+  .nav__item_sub {
+    width: 50%;
+    max-widwth: 50%;
+    display: inline;
+    min-height 40px;
+    line-height: 40px;
+    padding: 10px;
+  }
 }
 
 @media screen and (min-width: 325px){

@@ -19,8 +19,9 @@
           {:name "Results" :content results/draw :subtabs [{:name "5K"     :content results/subtab-5k :current true}
                                                            {:name "10K"    :content results/subtab-10k}
                                                            {:name "6 Hour" :content results/subtab-6hour}]}
-          {:name "Doug Allen" :content doug/draw }
-          {:name "Photos" :content photos/draw }
-          {:name "Sponsors" :content sponsors/draw }]
+      ;;    {:name "Doug Allen" :content doug/draw }
+      ;;    {:name "Photos" :content photos/draw }
+      ;;    {:name "Sponsors" :content sponsors/draw }
+         ]
    }
   )

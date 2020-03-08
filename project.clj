@@ -3,6 +3,7 @@
                  [org.clojure/clojurescript "1.9.908"]
                  [reagent "0.7.0"]
                  [re-frame "0.10.2"]
+                 [mattinieminen/re-fill "0.2.0"]
                  [compojure "1.5.0"]
                  [yogthos/config "0.8"]
                  [ring "1.4.0"]]

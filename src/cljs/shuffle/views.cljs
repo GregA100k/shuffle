@@ -26,8 +26,17 @@
 (defn draw-tab [t click-function & args]
   (let [sub? (if (= :sub (first args)) true false)]
     [(if (:current t)
-         (if sub?  :li.nav__item_sub.selected :li.nav__item.selected) 
-         (if sub? :li.nav__item_sub :li.nav__item))
+         :li.nav__item.selected
+         :li.nav__item)
+     [:a.controls__a {:href (str "/" (:code t))} (:name t)]
+   ]))
+
+
+(defn draw-sub-tab [t click-function & args]
+  (let [sub? (if (= :sub (first args)) true false)]
+    [(if (:current t)
+         :li.nav__item_sub.selected 
+         :li.nav__item_sub )
      {:on-click (click-function t)} 
      (:name t)
    ]))
@@ -35,6 +44,10 @@
 (defn draw-tabs [tablist show-or-hide click-function & args]
     [(if (= :show show-or-hide) :nav#menu.nav.show :nav#menu.nav.hide)
       [:ul (map #(draw-tab % click-function (first args)) tablist)]]
+  )
+(defn draw-sub-tabs [tablist show-or-hide click-function & args]
+    [(if (= :show show-or-hide) :nav#menu.nav.show :nav#menu.nav.hide)
+      [:ul (map #(draw-sub-tab % click-function (first args)) tablist)]]
   )
 
 (defn tab-click-function [t]

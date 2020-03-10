@@ -12,11 +12,11 @@
   {:name "Welcome" ; this is the name of the current tab
    :subname " "    ; this is the name of the current submenu selection
    :menu :hide
-   :tabs [{:name "Welcome" :current true :content welcome/draw }
-          {:name "Race Info" :content raceinfo/draw :subtabs [{:name "5K 10K" :content raceinfo/subtab-5k :current true}
+   :tabs [{:code "welcome" :name "Welcome" :current true :content welcome/draw }
+          {:code "info" :name "Race Info" :content raceinfo/draw :subtabs [{:name "5K 10K" :content raceinfo/subtab-5k :current true}
                                                               {:name "6 Hour" :content raceinfo/subtab-6hour}]}
-          {:name "Race Course" :content racecourse/draw }
-          {:name "Results" :content results/draw :subtabs [{:name "5K"     :content results/subtab-5k :current true}
+          {:code "course" :name "Race Course" :content racecourse/draw }
+          {:code "results" :name "Results" :content results/draw :subtabs [{:name "5K"     :content results/subtab-5k :current true}
                                                            {:name "10K"    :content results/subtab-10k}
                                                            {:name "6 Hour" :content results/subtab-6hour}]}
       ;;    {:name "Doug Allen" :content doug/draw }

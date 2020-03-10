@@ -3,7 +3,9 @@
 (def routes ["/" {"" :routes/welcome
                   "welcome" :routes/welcome
                   "info" :routes/info
-                  true :routes/missing
+                  "course" :routes/course
+                  "results" :routes/results
+                  true :routes/welcome
                   }
              ;"/welcome" {"" :routes/welcome}
              ;"/info"    {""  :routes/info}

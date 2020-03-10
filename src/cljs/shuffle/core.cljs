@@ -28,6 +28,16 @@
   (fn [_ [_ bidi-match]]
   (re-frame/dispatch [:change-tab "Race Info"])))
 
+(re-frame/reg-event-fx
+  :routes/course
+  (fn [_ [_ bidi-match]]
+  (re-frame/dispatch [:change-tab "Race Course"])))
+
+(re-frame/reg-event-fx
+  :routes/results
+  (fn [_ [_ bidi-match]]
+  (re-frame/dispatch [:change-tab "Results"])))
+
 
 (defn mount-root []
   (re-frame/clear-subscription-cache!)

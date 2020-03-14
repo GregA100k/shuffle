@@ -33,7 +33,6 @@
    ]
 [:p]
 
-"    Prices for 2018 are still being determined."
 [:p]
 
 "The combined total in the 5K and 10K will be limited to 250 participants"
@@ -65,7 +64,6 @@
         [:li "$60 Race Day"]
        ]
      [:p]
-    "Prices for 2018 are still being determined."
      [:p]
      "The race will be limited to 100 participants"
     ]

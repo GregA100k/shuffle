@@ -115,14 +115,30 @@ img {
 .divflow {
   display: flex;
 }
+.divgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 100px;
+}
 .twothirds {
   width: 66%;
 }
 .divright {
   float: right;
 }
+.divtop {
+  vertical-align: top;
+}
 
 .divtitle {
   font-size: 1.5em;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}

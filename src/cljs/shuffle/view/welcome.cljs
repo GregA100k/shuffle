@@ -12,9 +12,19 @@
       [:h4 ""]
       [:h4 "Noon The Six Hour Shuffle"]
       [:h4 "8:00PM Night Owl 5K and 10K"]
+      [:p]
+      [:p]
+      [:p]
+      [:h2 "Registration will open March 15, 2020"]
+      [:a {:href "http://ultrasignup.com/register.aspx?did=75822"
+           :target "_blank"}
+        [:img {:src "//ultrasignup.com/images/signup.jpg" 
+               :alt "Ultra Signup registration link"}]
+      ]
      ]
      [:div.twothirds.divright
-       [:img {:src "img/TrailPic_600x450_medium.JPG"}]
+       [:img {:src "img/TrailPic_600x450_medium.JPG"
+              :alt "lake elmo park reserver trail picture"}]
      ]
   ]
  ])

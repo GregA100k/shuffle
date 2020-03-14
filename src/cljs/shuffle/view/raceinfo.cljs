@@ -25,6 +25,12 @@
 [:p]
 
 "Registration Fees:"
+  [:ul
+   [:li "$30 March 15 - June 21"]
+   [:li "$35 June 22 - September 6"]
+   [:li "$40 September 7 - September 23"]
+   [:li "$50 Race Day"]
+   ]
 [:p]
 
 "    Prices for 2018 are still being determined."
@@ -52,6 +58,12 @@
      "Each loop of the course is 3.35 miles.  We will also have a 1 mile \"short loop\" for when time is running out or for a break from the long loop."
      [:p]
      "Registration Fees:"
+       [:ul
+        [:li "$40 March 15 - June 21"]
+        [:li "$45 June 22 - September 6"]
+        [:li "$50 September 7 - September 23"]
+        [:li "$60 Race Day"]
+       ]
      [:p]
     "Prices for 2018 are still being determined."
      [:p]

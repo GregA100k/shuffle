@@ -15,16 +15,23 @@
       [:p]
       [:p]
       [:p]
-      [:h2 "Registration will open March 15, 2020"]
-      [:a {:href "http://ultrasignup.com/register.aspx?did=75822"
-           :target "_blank"}
-        [:img {:src "//ultrasignup.com/images/signup.jpg" 
-               :alt "Ultra Signup registration link"}]
-      ]
      ]
      [:div.twothirds.divright
        [:img {:src "img/TrailPic_600x450_medium.JPG"
               :alt "lake elmo park reserver trail picture"}]
      ]
   ]
+
+      [:h2 "Registration will open March 15, 2020"]
+      [:a {:href "http://ultrasignup.com/register.aspx?did=75822"
+           :target "_blank"}
+        [:img {:src "//ultrasignup.com/images/signup.jpg" 
+               :alt "Ultra Signup registration link"}]
+      ]
+   [:div.divflow
+     [:div.twothirds.divright
+        [:img {:src "img/2020_USATF_Sanctioned_Event_Logo_350.png"
+               :alt "Sanctioned by USATF logo"
+               }] ]
+   ]
  ])

@@ -78,7 +78,7 @@
           [:div.inner
            [:div#burgermenu.burgermenu 
           ]]
-          (views/draw-tabs (:subtabs the-tab)
+          (views/draw-sub-tabs (:subtabs the-tab)
                             :show
                             (fn [t] #(re-frame/dispatch [:change-subtab (:name t)]))  )
         ]

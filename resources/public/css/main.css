@@ -120,6 +120,9 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: 70px 100px;
 }
+.onethird {
+  width: 33%;
+}
 .twothirds {
   width: 66%;
 }

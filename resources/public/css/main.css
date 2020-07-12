@@ -19,7 +19,7 @@ nav li {
   margin: 0 5px 0 0;
   padding: 7px;
   padding-bottom: 17px;
-  background-color: #555;
+  background-color: #f6925b;
   min-height: 30px;
   line-height: 30px;
 }
@@ -40,6 +40,10 @@ img {
 .content {
   border: solid;
   border-width: 1px 0 0 0;
+}
+
+.notice {
+  background-color: #f6925b;
 }
 
 .container{

@@ -1,12 +1,13 @@
 (defproject shuffle "0.1.0-SNAPSHOT"
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.908"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/clojurescript "1.10.773"]
+                 [http-kit "2.4.0"]
                  [reagent "0.7.0"]
                  [re-frame "0.10.2"]
                  [mattinieminen/re-fill "0.2.0"]
                  [compojure "1.5.0"]
                  [yogthos/config "0.8"]
-                 [ring "1.4.0"]]
+                 [ring "1.8.1"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]]
 

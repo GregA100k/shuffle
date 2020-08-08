@@ -5,7 +5,9 @@
                  [reagent "0.7.0"]
                  [re-frame "0.10.2"]
                  [mattinieminen/re-fill "0.2.0"]
-                 [compojure "1.5.0"]
+                 [compojure "1.5.0"
+                    :exclusions
+                    [ring/ring-core]]
                  [yogthos/config "0.8"]
                  [ring "1.8.1"]]
 

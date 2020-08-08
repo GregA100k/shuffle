@@ -2,18 +2,20 @@
 
 (defn draw [the-tab]
   [:div.content
-   [:h2 "The 7th Annual Doug Allen Memorial Trail Races will be October 3, 2020"]
-   [:div "the Night Owl Races are an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."
-   ]
-   [:h3 "Covid-19 Update"]
+   [:h2 "The 7th Annual Doug Allen Memorial Trail Races on October 3, 2020 are cancelled"]
+   ;[:h3 "Covid-19 Update"]
    [:div.content.notice
-    [:p "As it stands right now, July 10, we are unable to hold the Night Owl Races.  The first point of the "
-      [:a {:href "https://staysafe.mn.gov/assets/outdoor-guidelines_tcm1152-435380.pdf"} 
-          "Stay Safe MN Outdoor Recreation Guidelines for Events"]
-      " says \"Postpone or cancel outdoor gatherings... of more than 25 people.\" While Minnesota is doing better in controlling the spread of Covid-19 than a lot of states, there is still a steady stream of new cases so it is unlikely that those rules will change."
+    [:p [:h3 "The 2020 Night Owl Races are Cancelled" ]]
+    [:p "The primary goal of the Nightowl Races is to raise money for the Dr Doug Allen Sholarship for students of the medical profession, " 
+     "With helping the medical profession as a goal, it does not make sense to do anything that could risk spreading the virus, so the 2020 Night Owl Races are cancelled."
+     ]
+    [:p 
+     "The race committee explored options of holding a race with limited entries, or holding some form of virtual race, but, after careful consideration, decided to cancel this years race.  "
+     "Please stay safe and we hope to see you in 2021."
+     ]
     ]
-    [:p "Since the goal of the Night Owl Races is to raise money for the the Doug Allen Memorial Scholarship, we are exploring options to still have an event that will be safe and hope to make the final decision on how to proceed by the end of July."
-     ]]
+   [:div "The Night Owl Races are an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."
+   ]
    [:div.divflow
      [:div.onethird
       [:h4 "Saturday October 3"]

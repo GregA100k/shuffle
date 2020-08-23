@@ -11,7 +11,7 @@
      ]
     [:p 
      "The race committee explored options of holding a race with limited entries, or holding some form of virtual race, but, after careful consideration, decided to cancel this years race.  "
-     "Please stay safe and we hope to see you in 2021."
+     "Please stay safe and we hope to see you October 2, 2021."
      ]
     ]
    [:div "The Night Owl Races are an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."

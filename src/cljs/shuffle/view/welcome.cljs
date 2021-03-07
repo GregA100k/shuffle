@@ -2,23 +2,27 @@
 
 (defn draw [the-tab]
   [:div.content
-   [:h2 "The 7th Annual Doug Allen Memorial Trail Races on October 3, 2020 are cancelled"]
+   [:h2 "Night Owl Races 2021"]
    ;[:h3 "Covid-19 Update"]
-   [:div.content.notice
-    [:p [:h3 "The 2020 Night Owl Races are Cancelled" ]]
-    [:p "The primary goal of the Nightowl Races is to raise money for the Dr Doug Allen Sholarship for students of the medical profession, " 
-     "With helping the medical profession as a goal, it does not make sense to do anything that could risk spreading the virus, so the 2020 Night Owl Races are cancelled."
+   [:div.content
+    [:p [:h3 "October 2, 2021" ]]
+    [:p "The 2021 edition of the Night Owl Races is scheduled for Saturday October 2. "
+     "We are excited for the return of in person running/racing but the shape of event will likely be different. "
      ]
-    [:p 
-     "The race committee explored options of holding a race with limited entries, or holding some form of virtual race, but, after careful consideration, decided to cancel this years race.  "
-     "Please stay safe and we hope to see you October 2, 2021."
+    [:p "Registration will be on UltraSignup once again, but will not open until June at the earliest.  Even "
+     "though new covid cases are trending downward and the vaccine doses are trending upward, It doesn't "
+     "seem wise to open registration until there is more certainty about holding the race. "
+     "We will continue to monitor the guidance and regulations at "
+     [:a {:href "https://staysafe.mn.gov/" :target "_blank"} "Stay Safe MN (https://staysafe.mn.gov)" ]
+     " and work to develop the required covid-19 preparedness plan in order to provide the safest event possible. "
+
      ]
     ]
    [:div "The Night Owl Races are an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."
    ]
    [:div.divflow
      [:div.onethird
-      [:h4 "Saturday October 3"]
+      [:h4 "Saturday October 2"]
       [:h4 "Lake Elmo Park Reserve"]
       [:h4 ""]
       [:h4 "Noon The Six Hour Shuffle"]
@@ -36,10 +40,10 @@
       ]
       [:p]
       [:hr]
-      [:div
-        [:img {:src "img/2020_USATF_Sanctioned_Event_Logo_350.png"
-               :alt "Sanctioned by USATF logo"
-               }] ]
+    ;  [:div
+    ;    [:img {:src "img/2020_USATF_Sanctioned_Event_Logo_350.png"
+    ;           :alt "Sanctioned by USATF logo"
+    ;           }] ]
       [:p]
      ]
      [:div.twothirds.divright

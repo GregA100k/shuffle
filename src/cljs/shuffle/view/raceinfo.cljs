@@ -41,7 +41,7 @@
       [:p]
       [:p]
 
-      "The combined total in the 5K and 10K will be limited to 250 participants"
+      "The combined total in the 5K and 10K will be limited to 250 participants (subject to covid restrictions)"
     ]
   ]
 )
@@ -72,7 +72,7 @@
         ]
       [:p]
       [:p]
-      "The race will be limited to 100 participants"
+      "The race will be limited to 100 participants (subject to covid restrictions)"
     ]
   ]
 )
@@ -98,6 +98,7 @@
       "The " [:a {:href "https://staysafe.mn.gov/" :target "_blank"} "Stay Safe MN" ]
       " guidelines could impact all aspects of the race including the race sizes, start times, registration, "
       " packet pickup, and the start finish area. "
+      [:p]
       " As the details get worked out, this page will be updated."
       [:p]
     ]

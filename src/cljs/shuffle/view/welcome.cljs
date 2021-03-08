@@ -9,6 +9,8 @@
     [:p "The 2021 edition of the Night Owl Races is scheduled for Saturday October 2. "
      "We are excited for the return of in person running/racing but the shape of event will likely be different. "
      ]
+   [:div "Even with changes, the Night Owl Races will continue to be an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."
+   ]
     [:p "Registration will be on UltraSignup once again, but will not open until June at the earliest.  Even "
      "though new covid cases are trending downward and the vaccine doses are trending upward, It doesn't "
      "seem wise to open registration until there is more certainty about holding the race. "
@@ -18,8 +20,6 @@
 
      ]
     ]
-   [:div "The Night Owl Races are an excellent next step in trail running.  Step into the world of night time trail running with the Night Owl 5K and 10K races or step up to ultra distance trail running at the Six Hour Shuffle."
-   ]
    [:div.divflow
      [:div.onethird
       [:h4 "Saturday October 2"]

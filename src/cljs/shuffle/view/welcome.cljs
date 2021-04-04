@@ -31,7 +31,7 @@
       [:div
         [:h2 "Register at"
           [:div.divtop
-            [:a {:href "http://ultrasignup.com/register.aspx?did=75822"
+            [:a {:href "http://ultrasignup.com/register.aspx?eid=4575"
                  :target "_blank"}
               [:img {:src "//ultrasignup.com/images/signup.jpg" 
                      :alt "Ultra Signup registration link"}]

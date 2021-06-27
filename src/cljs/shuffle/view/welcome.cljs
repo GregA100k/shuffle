@@ -40,10 +40,10 @@
       ]
       [:p]
       [:hr]
-    ;  [:div
-    ;    [:img {:src "img/2020_USATF_Sanctioned_Event_Logo_350.png"
-    ;           :alt "Sanctioned by USATF logo"
-    ;           }] ]
+      [:div
+        [:img {:src "img/2021_USATF_Sanctioned_Event_Logo.jpg"
+               :alt "Sanctioned by USATF logo"
+               }] ]
       [:p]
      ]
      [:div.twothirds.divright

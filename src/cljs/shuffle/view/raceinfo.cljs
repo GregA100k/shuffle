@@ -16,8 +16,8 @@
       [:p]
       [:b "Start Time"]
       [:ul
-        [:li "5K Race starts at 8 p.m."]
-        [:li "10K Race will have a separate start this year.  Details to follow."]
+        [:li "10K Race starts at 7:45PM"]
+        [:li "5K Race starts at 8:00PM"]
       ]
       [:p]
 
@@ -32,11 +32,14 @@
 
       "Registration Fees:"
        [:ul
-         [:li "To be determined"]
+       ;  [:li "To be determined"]
        ;  [:li "$30 March 15 - June 21"]
+         [:li "$30 until September 12"]
        ;  [:li "$35 June 22 - September 6"]
+         [:li "$40 September 13 - September 25"]
        ;  [:li "$40 September 7 - September 23"]
        ;  [:li "$50 Race Day"]
+         [:li "Race day registration availability is yet to be determined."]
        ]
       [:p]
       [:p]
@@ -64,11 +67,12 @@
       [:p]
       "Registration Fees:"
         [:ul
-          [:li "To be determined"]
-         ;[:li "$40 March 15 - June 21"]
+         ;[:li "To be determined"]
+         [:li "$40 until September 12"]
          ;[:li "$45 June 22 - September 6"]
-         ;[:li "$50 September 7 - September 23"]
+         [:li "$50 September 13 - September 25"]
          ;[:li "$60 Race Day"]
+         [:li "Race day registration availability is yet to be determined."]
         ]
       [:p]
       [:p]

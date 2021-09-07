@@ -26,7 +26,8 @@
       [:h4 "Lake Elmo Park Reserve"]
       [:h4 ""]
       [:h4 "Noon The Six Hour Shuffle"]
-      [:h4 "8:00PM Night Owl 5K and 10K"]
+      [:h4 "7:45PM Night Owl 10K"]
+      [:h4 "8:00PM Night Owl 5K"]
       [:p]
       [:div
         [:h2 "Register at"

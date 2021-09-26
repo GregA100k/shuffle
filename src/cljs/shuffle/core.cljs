@@ -38,6 +38,10 @@
   (fn [_ [_ bidi-match]]
   (re-frame/dispatch [:change-tab "Results"])))
 
+(re-frame/reg-event-fx
+  :routes/volunteer
+  (fn [_ [_ bidi-match]]
+  (re-frame/dispatch [:change-tab "Volunteer"])))
 
 (defn mount-root []
   (re-frame/clear-subscription-cache!)

@@ -9,7 +9,8 @@
       [:div
         [:table nil
           [:tbody nil
-            [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2018/10/nightowl5kresults2018.txt"} "2019"]] ]
+            [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2021/10/nightowl5kresults21.txt"} "2021"]] ]
+            [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2019/10/nightowl5kresults2019.txt"} "2019"]] ]
             [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2018/10/nightowl5kresults2018.txt"} "2018"]] ]
             [:tr nil [:td nil [:a {:href "http://www.frontrunnerusa.com/wp-content/uploads/2017/09/nightowl5kresults17.txt"} "2017"]] ]
             [:tr nil [:td nil [:a {:href "http://www.frontrunnerusa.com/wp-content/uploads/2016/10/nightowl5kresults16.txt"} "2016"]] ]
@@ -28,6 +29,7 @@
       [:div
         [:table nil
           [:tbody nil
+            [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2021/10/nightowl10kresults21.txt"} "2021"]] ]
             [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2019/10/nightowl10kresults2019.txt"} "2019"]] ]
             [:tr nil [:td nil [:a {:href "https://www.frontrunnerusa.com/wp-content/uploads/2018/10/nightowl10kresults2018.txt"} "2018"]] ]
             [:tr nil [:td nil [:a {:href "http://www.frontrunnerusa.com/wp-content/uploads/2017/09/nightowl10kresults17.txt"} "2017"]] ]
@@ -47,6 +49,7 @@
       [:div
         [:table nil
           [:tbody nil
+            [:tr nil [:td nil [:a {:href "https://ultrasignup.com/results_event.aspx?did=84386"} "2021"]] ]
             [:tr nil [:td nil [:a {:href "http://ultrasignup.com/results_event.aspx?did=66951"} "2019"]] ]
             [:tr nil [:td nil [:a {:href "http://ultrasignup.com/results_event.aspx?did=56343"} "2018"]] ]
             [:tr nil [:td nil [:a {:href "http://ultrasignup.com/results_event.aspx?did=47035"} "2017"]] ]

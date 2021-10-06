@@ -22,7 +22,7 @@
                 :subtabs [{:name "5K"     :content results/subtab-5k :current true}
                           {:name "10K"    :content results/subtab-10k}
                           {:name "6 Hour" :content results/subtab-6hour}]}
-          {:code "volunteer" :name "Volunteer"             :content volunteer/draw }
+      ;;    {:code "volunteer" :name "Volunteer"             :content volunteer/draw }
 
       ;;    {:name "Doug Allen" :content doug/draw }
       ;;    {:name "Photos" :content photos/draw }
